@@ -1,4 +1,4 @@
-package UI_test.Pages;
+package uiTest.pages;
 
 import com.codeborne.selenide.ElementsCollection;
 import org.openqa.selenium.support.FindBy;

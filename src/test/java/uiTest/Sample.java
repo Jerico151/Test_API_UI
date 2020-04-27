@@ -1,9 +1,9 @@
-package UI_test;
+package uiTest;
 
-import UI_test.Pages.BankPage;
-import UI_test.Pages.ResultPage;
-import UI_test.Pages.SearchPage;
-import UI_test.Settings.Driver;
+import uiTest.pages.BankPage;
+import uiTest.pages.ResultPage;
+import uiTest.pages.SearchPage;
+import uiTest.settings.Driver;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 import org.testng.Assert;

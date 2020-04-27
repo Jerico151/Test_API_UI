@@ -1,6 +1,6 @@
-package GET_POST_Tests;
+package tests;
 
-import GET_POST_Tests.Usersdata.Users;
+import tests.usersdata.Users;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.Assert;
@@ -12,7 +12,7 @@ import java.util.List;
 import static io.restassured.path.json.JsonPath.from;
 
 
-public class Test_GET2 {
+public class GetRequestTest {
 
     String baseUrl = "https://reqres.in/api/users?page=2";
 

@@ -1,8 +1,8 @@
-package GET_POST_Tests.Usersdata;
+package tests.usersdata;
 
-public class POST_user {
+public class PostUser {
 
-    public POST_user(String name, String job) {
+    public PostUser(String name, String job) {
         this.name = name;
         this.job = job;
     }

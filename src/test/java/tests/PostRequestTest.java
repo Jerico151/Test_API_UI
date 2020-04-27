@@ -1,13 +1,13 @@
-package GET_POST_Tests;
+package tests;
 
-import GET_POST_Tests.Usersdata.POST_user;
+import tests.usersdata.PostUser;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class Test_POST1 {
+public class PostRequestTest {
     String baseUrl = "https://reqres.in/api/users";
 
     @Test
@@ -16,10 +16,10 @@ public class Test_POST1 {
         String UserName = "example";
         String UserJob = "developer";
 
-        POST_user exampleUser = new POST_user(UserName, UserJob);
+        PostUser exampleUser = new PostUser(UserName, UserJob);
         Response response = given().contentType("application/json").body(exampleUser).when().post(baseUrl);
 
-        POST_user userForResponse = response.as(POST_user.class);
+        PostUser userForResponse = response.as(PostUser.class);
 
         Assert.assertEquals(userForResponse.getName(), UserName);
         Assert.assertEquals(userForResponse.getJob(), UserJob);

@@ -1,4 +1,4 @@
-package GET_POST_Tests.Usersdata;
+package tests.usersdata;
 
 public class Users {
     public Users(String id, String email, String first_name, String last_name, String avatar) {
